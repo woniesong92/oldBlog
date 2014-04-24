@@ -4,16 +4,17 @@ title: Howon Song
 ---
 
 
-<div id="work">
-  hey
+<div id="work" class="fam-picture">
+  <div id="self-marketing">
+    <p>hello</p>
+  </div>
+
 </div>
 
 <div id="blog">
-hi
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
