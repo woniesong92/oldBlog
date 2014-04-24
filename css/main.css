@@ -10,19 +10,24 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { 
+  height: 100%; 
+  min-height: 100%;
+}
 
 body {
+  margin-top: -10px;
   background-color: #FFF;
   font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%; 
+}
 
-h1 { margin-bottom: 1em; }
+h1 { 
+  margin-bottom: 1em; 
+}
 p { margin: 1em 0; }
 
 a         { color: #00a; }
@@ -34,7 +39,30 @@ a:visited { color: #a0a; }
 /* Home
 /*
 /*****************************************************************************/
+
+#home {
+  margin: 0;
+  text-align: left;
+}
+
+#home .carousel {
+  height: 500px;
+  width: 500px;
+}
+
+#home .carousel-inner {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#home .carousel img {
+  width: 100%;
+  height: 100%;
+}
+
 .posts {
+  display: none;
   list-style-type: none;
   margin-bottom: 2em;
 }
@@ -49,19 +77,18 @@ a:visited { color: #a0a; }
   font-size: 80%;
 }
 
+#fam-picture {
+  width: 100%;
+  height: 60%;
+  background: url('/img/fam-pic.jpg') no-repeat;
+  background-size: cover;
+}
+
 /*****************************************************************************/
 /*
 /* Site
 /*
 /*****************************************************************************/
-
-.site {
-  font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
-}
 
 .header a {
   font-weight: bold;
@@ -94,31 +121,9 @@ a:visited { color: #a0a; }
   color: #aaa;
 }
 
-.footer {
-  font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
-}
-
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.footer .contact a {
-  color: #8085C1;
-}
-
-.footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.footer .rss img {
-  border: 0;
+#footer {
+  display: none;
+  margin-left: 20%;
 }
 
 /*****************************************************************************/
@@ -157,4 +162,101 @@ a:visited { color: #a0a; }
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+
+/*****************************************************************************/
+/*
+/* left-sidebar
+/*
+/*****************************************************************************/
+
+
+/* Stuff I added */
+#left-sidebar {
+  width: 20%;
+  position: fixed;
+  height: 100%;
+  font-size: 18px;
+  padding-top: 30px;
+  background: url('/img/left-background.jpg') no-repeat;
+  color: white;
+}
+
+#left-sidebar li {
+  padding: 2px 0;
+}
+
+#left-sidebar a i {
+  color: #34495E;
+}
+
+#left-sidebar a:hover i {
+  color: white;
+}
+
+#left-sidebar a:hover {
+  color: white;
+}
+
+#right-main {
+  margin-left: 20%;
+  /* padding-top: 20px; */
+  width: 80%;
+  height: 90%;
+}
+
+#introduction {
+  text-align: left;
+  width: 200px;
+  margin-left: 55px;
+}
+
+#left-sidebar #my-name {
+  text-align: left;
+  width: 200px;
+  margin-left: 52px;
+  color: white;
+}
+
+#left-sidebar a:visited {
+  color: white;
+}
+
+#left-sidebar h5 a {
+  color: white;
+}
+
+#left-sidebar #about-info {
+  display: table;
+  padding-top: 10px;
+  margin-left: 55px;
+}
+
+#left-sidebar #about-info a {
+  display: block;
+  padding: 10px 0;
+}
+
+.divider {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+#left-sidebar li {
+  height: 30px;
+}
+
+#left-sidebar i {
+  display: table-cell;
+  width: 30px;
+}
+
+#left-sidebar .label {
+  display: table-cell;
+  width: 80px;
+  text-align: left;
+} 
+
+#left-sidebar a:hover li {
+  color: white;
 }

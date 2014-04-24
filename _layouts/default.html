@@ -12,33 +12,43 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
 
+        <!-- Loading Bootstrap -->
+        <link href="lib/flatui/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Loading Flat UI -->
+        <link href="lib/flatui/css/flat-ui.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+      <script src="lib/flatui/js/jquery-1.8.3.min.js"></script>
+      <script src="lib/flatui/js/jquery-ui-1.10.3.custom.min.js"></script>
+      <script src="lib/flatui/js/jquery.ui.touch-punch.min.js"></script>
+      <script src="lib/flatui/js/bootstrap.min.js"></script>
+      
+      <div id="left-sidebar">
+        <h4 id="my-name"><a href="/">Howon Song</a></h4>
+        <p id="introduction">
+          <span>A developer with an</span>
+          <span>entrepreneurial spirit</span>
+        </p>
+        <div id="about-info">
+          <a href='#'><i class='fa fa-envelope'></i><span class='label'>Email</span></a>
+          <a href='#'><i class='fa fa-facebook'></i><span class='label'>Facebook</span></a>
+          <a href='#'><i class='fa fa-linkedin'></i><span class='label'>LinkedIn</span></a>
+          <a href='#'><i class='fa fa-github'></i><span class='label'>GitHub</span></a>
         </div>
+      </div>
+      
+      <div id="right-main">
+        {{ content }}
+      </div>
+      
+      <div id="footer">
+        this is my footer hello?
+      </div>
 
     </body>
 </html>
