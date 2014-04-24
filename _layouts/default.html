@@ -21,6 +21,8 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
     <body>
       <script src="lib/flatui/js/jquery-1.8.3.min.js"></script>
@@ -28,26 +30,27 @@
       <script src="lib/flatui/js/jquery.ui.touch-punch.min.js"></script>
       <script src="lib/flatui/js/bootstrap.min.js"></script>
       
-      <div id="left-sidebar">
-        <h3 id="my-name"><a href="/">Howon Song</a></h3>
-        <div id="introduction">
-          <div>A developer with an</div>
-          <div>entrepreneurial spirit</div>
+
+      <div class="container-fluid">
+        <div class="row" id="main-row">
+          <div class="col-xs-3" id="left-sidebar">
+            <div id="my-name"><a href="/">Howon Song</a></div>
+            <div id="introduction">
+              <div>A developer with an</div>
+              <div>entrepreneurial spirit</div>
+            </div>
+            <div id="about-info">
+              <a href='#'><i class='fa fa-envelope'></i><span class='label'>Email</span></a>
+              <a href='#'><i class='fa fa-facebook'></i><span class='label'>Facebook</span></a>
+              <a href='#'><i class='fa fa-linkedin'></i><span class='label'>LinkedIn</span></a>
+              <a href='#'><i class='fa fa-github'></i><span class='label'>GitHub</span></a>
+            </div>
+          </div>
+          <div class="col-xs-9">
+            {{ content }}
+
+          </div>
         </div>
-        <div id="about-info">
-          <a href='#'><i class='fa fa-envelope'></i><span class='label'>Email</span></a>
-          <a href='#'><i class='fa fa-facebook'></i><span class='label'>Facebook</span></a>
-          <a href='#'><i class='fa fa-linkedin'></i><span class='label'>LinkedIn</span></a>
-          <a href='#'><i class='fa fa-github'></i><span class='label'>GitHub</span></a>
-        </div>
-      </div>
-      
-      <div id="right-main">
-        {{ content }}
-      </div>
-      
-      <div id="footer">
-        this is my footer hello?
       </div>
 
     </body>
