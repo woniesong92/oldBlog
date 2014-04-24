@@ -3,11 +3,18 @@ layout: default
 title: Howon Song
 ---
 
-
 <div id="work" class="fam-picture">
-  <div id="self-marketing">
-    <p>hello</p>
-  </div>
+  <div class="slanted"></div>
+  <div class="wrapper">
+    <div id="self-marketing">
+      <div class='large-jumbo'>Howon Song</div>
+      <div class="small-jumbo">Developer</div>
+      <div>&</div>
+      <div class="small-jumbo">Entrepreneur</div>
+      <div class="long-logo">All I want is seeing people I meet on subway
+      using my product with a smile <span class="smile">:)</span></div>
+    </div>
+
 
 </div>
 
@@ -18,3 +25,14 @@ title: Howon Song
     {% endfor %}
   </ul>
 </div>
+
+<script>
+  $(function() {
+    $('.smile').fadeIn(800);  
+  });
+  
+
+  $('.large-jumbo').fitText(0.8);
+  $('.small-jumbo').fitText(1.0);
+  $('.long-logo').fitText(2.0);
+</script>
