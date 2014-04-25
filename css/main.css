@@ -274,7 +274,6 @@ a:visited { color: #a0a; }
 }
 
 #projects {
-  background-color: #2c3e50;
   height: 100%;
   width: 100%;
 }
@@ -379,4 +378,26 @@ a:hover #goto-second {
 
 #blog {
   font-size: 1em;
+}
+
+.project-item {
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.project-first {
+  background-color: #D6B8A3;
+}
+
+.project-second {
+  background-color: #F0DEDC;
+}
+
+.project-third {
+  background-color: #D8ABA7;
+}
+
+.project-forth {
+  background-color: #F4F4F4;
 }
