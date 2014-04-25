@@ -278,17 +278,6 @@ a:visited { color: #a0a; }
   width: 100%;
 }
 
-.slanted {
-  display: none;
-  z-index: 1;
-  position: absolute;
-  top: -100px;
-  background-color: white;
-  -webkit-transform: matrix(0.9997, -0.05443, 0.02443, 0.9997, 0, 0);
-  height: 150px;
-  width: 100%;
-}
-
 .projects-logo {
   width: 100%;
   color: white;
@@ -380,24 +369,67 @@ a:hover #goto-second {
   font-size: 1em;
 }
 
+#project-content {
+  width: 80%;
+  height: 100%;
+  margin-left: 20%;
+}
+
 .project-item {
-  width: 50%;
-  height: 50%;
+  width: 300%;
+  height: 100%;
+  
+  overflow: hidden;
+}
+
+.project-subitem {
+  width: 33.33%;
+  height: 100%;
   float: left;
 }
 
-.project-first {
-  background-color: #D6B8A3;
+#project-sidebar {
+  position: absolute;
+  width: 20%;
+  height: 100%;
 }
 
 .project-second {
   background-color: #F0DEDC;
+  background-size: cover;
 }
 
 .project-third {
   background-color: #D8ABA7;
+  background-size: cover;
 }
 
-.project-forth {
-  background-color: #F4F4F4;
+.sidebar-item {
+  height: 33.3%;
+  font-size: 30px;
+  color: white;
+}
+
+.sidebar-first {
+  background-color: #2980b9;
+}
+
+.sidebar-second {
+  background-color: #34495e;
+}
+
+.sidebar-third {
+  background-color: #c0392b;
+}
+
+#one-tj {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+#two-tj {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
