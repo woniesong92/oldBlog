@@ -37,13 +37,16 @@
 @concrete:                  #95a5a6;
 @asbestos:                  #7f8c8d;
 
+//////////// MY CUSTOM COLOR ////////////
+@starlight:                 #b8a7a7;
+
 // Grays
 @gray:                      @concrete;
 @gray-light:                @silver;
 @inverse:                   white;
 
 // Brand colors
-@brand-primary:             @wet-asphalt;
+@brand-primary:             @starlight;
 @brand-secondary:           @turquoise;
 @brand-success:             @emerald;
 @brand-warning:             @sun-flower;
@@ -56,11 +59,11 @@
 //## Settings for some of the most global styles.
 
 @body-bg:                   #fff;
-@text-color:                @brand-primary;
+@text-color:                black;
 
 //** Global textual link color.
-@link-color:                @green-sea;
-@link-hover-color:          @turquoise;
+@link-color:                @starlight;
+@link-hover-color:          white;
 
 
 //== Typography
@@ -253,8 +256,8 @@
 //##
 
 // Basics of a navbar
-@zindex-navbar:              1000;
-@zindex-navbar-fixed:        1030;
+@zindex-navbar:              2;
+@zindex-navbar-fixed:        2;
 @navbar-height-base:         53px;
 @navbar-height-large:        76px;
 @navbar-input-line-height:   1.4; // ~21px
@@ -264,10 +267,10 @@
 @navbar-default-bg:          saturate(spin(tint(@brand-primary, 91%), -18), 2%);
 
 // Navbar links
-@navbar-default-link-color:           @brand-primary;
-@navbar-default-link-hover-color:     @brand-secondary;
+@navbar-default-link-color:           @starlight;
+@navbar-default-link-hover-color:     white;
 @navbar-default-link-hover-bg:        transparent;
-@navbar-default-link-active-color:    @brand-secondary;
+@navbar-default-link-active-color:    white;
 @navbar-default-link-active-bg:       transparent;
 @navbar-default-link-disabled-color:  #ccc;
 @navbar-default-link-disabled-bg:     transparent;
