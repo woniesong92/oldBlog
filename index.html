@@ -30,8 +30,10 @@ title: Howon Song
 <script>
 
   $(function() {
-    $('.smile').fadeIn(2500);
-    $('#goto-second').addClass('slideUp');
+    setTimeout(function() {
+      $('.smile').fadeIn(2500);
+      $('#goto-second').slideDown('slow');  
+    }, 500);
   });
   
 
