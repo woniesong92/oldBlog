@@ -12,7 +12,7 @@ html, body {
 body {
   margin-top: -10px;
   background-color: #FFF;
-  font: 10% Helvetica, Arial, sans-serif;
+  font: 100% Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,11 +68,6 @@ a:visited { color: #a0a; }
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
-}
-
-.fam-picture {
-  background: url('/img/fam-pic.jpg') no-repeat;
-  background-size: cover;
 }
 
 /*****************************************************************************/
@@ -271,15 +266,14 @@ a:visited { color: #a0a; }
   color: white;
 }
 
-#work {
-  /* background: url('/img/star-bg.jpg) no-repeat; */
+#about {
   background: url('/img/mybg.jpg') no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
 
-#blog {
+#projects {
   height: 100%;
   width: 100%;
 }
@@ -376,4 +370,8 @@ a:hover #goto-second {
 
 .social-icons a {
   color: #b8a7a7;
+}
+
+#blog {
+  font-size: 1em;
 }

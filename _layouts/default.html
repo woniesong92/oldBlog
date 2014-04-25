@@ -35,8 +35,9 @@
       <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="collapse navbar-collapse" id="navbar-collapse-01">
           <ul class="nav navbar-nav navbar-right">           
-            <li id="projects-link"><a href="#">Work</a></li>
-            <li id="posts-link"><a href="#">Blog</a></li>
+            <li id="about-link"><a href="#">About</a></li>
+            <li id="projects-link"><a href="#">Projects</a></li>
+            <li id="blog-link"><a href="/blog">Blog</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </nav><!-- /navbar -->
@@ -64,14 +65,22 @@
       </div>
 
       <script>
-        $('#posts-link').click(function() {
-          console.log("hey")
-          $.scrollTo('#blog', 400);
+        $('#blog-link').click(function() {
+          console.log("go to blog page")
+          //$.scrollTo('#blog', 400);
+        });
+
+        $('#about-link').click(function() {
+          $.scrollTo('#about', 400);
+        });
+
+        $('#projects-link').click(function() {
+          $.scrollTo('#projects', 400);
         });
 
         $('#goto-second').click(function() {
-          $.scrollTo('#blog', 400);
-        })
+          $.scrollTo('#projects', 400);
+        });
       </script>
     </body>
 </html>
