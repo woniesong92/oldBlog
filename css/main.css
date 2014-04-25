@@ -313,7 +313,7 @@ a:visited { color: #a0a; }
 
 #self-marketing {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   margin-left: -2.5em;
   width: 50%;
@@ -330,6 +330,8 @@ a:visited { color: #a0a; }
 }
 
 .long-logo {
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-size: .5em;
   line-height: 1em;
   color: #b8a7a7;
@@ -352,4 +354,16 @@ a:visited { color: #a0a; }
 
 a:hover #goto-second {
   color: white;
+}
+
+.social-icons {
+  margin-top: -10px;
+}
+
+.social-icons i {
+  padding-right: .5em;
+}
+
+.social-icons a {
+  color: #b8a7a7;
 }
