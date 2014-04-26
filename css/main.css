@@ -372,26 +372,26 @@ a:hover #goto-second {
 #project-content {
   width: 80%;
   height: 100%;
-  margin-left: 20%;
+  position: relative;
+  float: left;
+}
+
+#project-sidebar {
+  float: left;
+  width: 20%;
+  height: 100%;
 }
 
 .project-item {
   width: 300%;
   height: 100%;
-  
-  overflow: hidden;
 }
 
 .project-subitem {
+  height: 100%;
   width: 33.33%;
-  height: 100%;
+  position: relative;
   float: left;
-}
-
-#project-sidebar {
-  position: absolute;
-  width: 20%;
-  height: 100%;
 }
 
 .project-second {
@@ -422,14 +422,10 @@ a:hover #goto-second {
   background-color: #c0392b;
 }
 
-#one-tj {
-  width: 100%;
-  height: 100%;
+#first-sub1 {
   background-color: grey;
 }
 
-#two-tj {
-  width: 100%;
-  height: 100%;
+#first-sub2 {
   background-color: red;
 }

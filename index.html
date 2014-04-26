@@ -7,11 +7,11 @@ title: Howon Song
   <div class="slanted"></div>
   <div class="wrapper">
     <div id="self-marketing">
-      <div class='large-jumbo'>HOWON SONG</div>
-      <div class="small-jumbo">DEVELOPER</div>
+      <div class='large-jumbo'>HELLO</div>
+      <div class="small-jumbo">THANKS FOR</div>
       <div class='ampersand'>&</div>
-      <div class="small-jumbo">ENTREPRENEUR</div>
-      <div class="long-logo">I WANT TO SEE PEOPLE USE MY PRODUCT WITH A SMILE <span class="smile">:)</span></div>
+      <div class="small-jumbo">HELPING ME</div>
+      <div class="long-logo">I AM HAVING TROUBLE <span class="smile">:(</span></div>
       <div class="social-icons">
         <a href='#'><i class="fa fa-envelope"></i></a>
         <a href='#'><i class="fa fa-facebook"></i></a>
@@ -23,21 +23,32 @@ title: Howon Song
   </div>
 </div>
 
-<div id="projects">
+<div id="projects"> <!-- start of entire projects page -->
   <div id="project-sidebar">
-    <a href="#one-tj"><div class="sidebar-item sidebar-first">dirst</div></a>
-    <a href="#project-second"><div class="sidebar-item sidebar-second">second</div></a>
-    <a href="#"><div class="sidebar-item sidebar-third">third</div></a>
+    <a href="#project-first">
+      <div class="sidebar-item sidebar-first">first</div>
+    </a>
+    <a href="#project-second">
+      <div class="sidebar-item sidebar-second">second</div>
+    </a>
+    <a href="#">
+      <div class="sidebar-item sidebar-third">third</div>
+    </a>
   </div>
-  <div id="project-content">
-    <div id="project-first" class="project-item">
-      <a href="#two-tj" class='project-subitem'><div id="one-tj">1</div></a>
-      <a href='#one-tj' class='project-subitem'><div id="two-tj">2</div></a>
+  
+  <div id="project-content"> <!-- this must be the scrollable itmes' container, not the entire window -->
+    <div id="project-first" class="project-item"> 
+      <!-- these items should be scrollable -->
+      <div class="project-subitem" id="first-sub1">
+        <a href='#first-sub2' class='next'>next</a>
+      </div>
+      <div class='project-subitem' id='first-sub2'>
+        <a href='#first-sub1' class='prev'>prev</a>
+      </div>
+      <!-- end of scrollable items -->
     </div>
-    <div id="project-second" class="project-item"></div>
-    <div id="project-third" class="project-item"></div>
-  </div>
-</div>
+  </div> <!-- end of scroll scroll container -->
+</div> <!-- end of entire projects page -->
 
 <script>
   $(function() {
@@ -46,8 +57,15 @@ title: Howon Song
       $('#goto-second').slideDown('slow');  
     }, 500);
 
+    // local scroll
     $.localScroll.defaults.axis = 'xy';
-    $('#projects').localScroll();
+    
+    // FIXME: when I set target, nothing scrolls.
+    // But I don't want the entire window to scroll
+    $('#projects').localScroll({
+      //target: '#project-content',
+      hash: false
+    });
 
   });
 
