@@ -47,6 +47,16 @@ title: Howon Song
       </div>
       <!-- end of scrollable items -->
     </div>
+    <div id="project-second" class="project-item"> 
+      <!-- these items should be scrollable -->
+      <div class="project-subitem" id="second-sub1">
+        <a href='#second-sub2' class='next'>next</a>
+      </div>
+      <div class='project-subitem' id='second-sub2'>
+        <a href='#second-sub1' class='prev'>prev</a>
+      </div>
+      <!-- end of scrollable items -->
+    </div>
   </div> <!-- end of scroll scroll container -->
 </div> <!-- end of entire projects page -->
 
@@ -63,7 +73,7 @@ title: Howon Song
     // FIXME: when I set target, nothing scrolls.
     // But I don't want the entire window to scroll
     $('#projects').localScroll({
-      //target: '#project-content',
+      target: '#project-content',
       hash: false
     });
 
