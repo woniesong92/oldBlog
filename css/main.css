@@ -57,3 +57,21 @@ html, body {
   background-size: cover;
   background-image: url('/img/side-fam.jpg');
 }
+
+@media(min-width:1200px) {
+  .col-md-6 {
+    width: 40% !important;
+  }
+
+  .col-md-8 {
+    width: 60% !important;
+  }
+
+  .col-md-4 {
+    width: 20% !important;
+  }
+
+  .left-column {
+    margin-left: 10%;
+  }
+}
