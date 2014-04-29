@@ -44,7 +44,9 @@ html, body {
 }
 
 .left-column {
+  margin-top: 1%;
   background-color: grey;
+  height: 89%;
 }
 
 .bigger {
@@ -53,5 +55,5 @@ html, body {
 
 .fam-background {
   background-size: cover;
-  background: url();
+  background-image: url('/img/side-fam.jpg');
 }
