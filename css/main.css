@@ -23,7 +23,7 @@ html, body {
 
 #self-marketing {
   position: relative;
-  top: 30%;
+  top: 25%;
   text-align: center;
 }
 
@@ -45,4 +45,13 @@ html, body {
 
 .left-column {
   background-color: grey;
+}
+
+.bigger {
+  font-size: 1.2em;
+}
+
+.fam-background {
+  background-size: cover;
+  background: url();
 }
