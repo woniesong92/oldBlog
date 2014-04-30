@@ -46,9 +46,9 @@ html, body {
   position: fixed;
   left: 0;
   height: 100%;
-  width: 10%;
+  width: 16%;
   z-index: 1000;
-  background-color: red;
+  background-color: grey;
 }
 
 .page-title {
@@ -56,22 +56,21 @@ html, body {
   color: grey;
 }
 
-.left-video {
-  height: 100%;
-  background-color: white;
+.left-column {
+  margin-left: 16%;
 }
 
-.left-video#togetherjs {
+#togetherjs {
   background-size: cover;
   background-image: url('/img/togetherjs.jpg');
 }
 
-.left-video#edubyme {
+#edubyme {
   background-size: cover;
   background-image: url('/img/edubyme.png');
 }
 
-.left-video#instantmusic {
+#instantmusic {
   background-size: cover;
   background-position: right;
   background-image: url('/img/instantmusic.png');

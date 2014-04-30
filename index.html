@@ -2,7 +2,6 @@
 layout: default
 title: Howon Song
 ---
-<link rel="stylesheet" href="/lib/fullPage.js/jquery.fullPage.css">
 
 <div id="introduction" class="main section">
   <div class="row full">
@@ -13,85 +12,12 @@ title: Howon Song
         <a href="/projects"><span class="view-projects">VIEW PROJECTS</span></a>
       </div>      
     </div>
-    <div class="angle-down-wrapper">
-      <a href="#" id="goto-second"><div><i class="fa fa-angle-down"></i></div></a>
-    </div>
   </div>
 </div>
 
-<div id="open-source" class="main section">
-  <div class="row full">
-    <div class="page-title">OPEN SOURCE</div>
-    <div class="content-wrapper">
-      <div class="col-md-6 left-column">
-        <div class="left-video" id="togetherjs"></div>
-      </div>
-      <div class="col-md-6 open-source">
-        <p>I am the <span class="bigger">top #7</span> contributor for TogetherJS, which adds real-time collaboration to your website and is widely used by services like JSFiddle, Popcorn.js, Wordpress and more. I contributed by adding YouTube and TinyMCE editor sync modules and their example apps.</p>
-        <button class="btn btn-hg btn-primary">View Website</button>
-      </div>
-    </div>
-    <a href="#" id="goto-third"><i class="fa fa-angle-down"></i></a>
-  </div>
-</div>
-
-<div id="entrepreneur" class="main section">
-  <div class="row full">
-    <div class="page-title">ENTREPRENEUR</div>
-    <div class="content-wrapper">
-      <div class="col-md-6 left-column">
-        <div class="left-video" id="edubyme"></div>
-      </div>
-      <div class="col-md-6">
-        <p>My first web app was <span class="bigger">EdubyMe</span>, an online English essay editing service that targeted international students and acquired 300+ real students in two months.</p>
-        <button class="btn btn-hg btn-primary">View Website</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="side-project" class="main section">
-  <div class="row full">
-    <div class="page-title">Fun Stuff</div>
-    <div class="content-wrapper">
-      <div class="col-md-6 left-column">
-        <div class="left-video" id="instantmusic"></div>
-      </div>
-      <div class="col-md-6">
-        <p>I am the author of a music player <span class="bigger">Instant Music</span>, a chrome extension that instantly plays the latest songs listed on BillBoard's top charts. It's useful for people who are tired of finding good music and updating their playlists every so often.</p>
-        <button class="btn btn-hg btn-primary">View Website</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="contact-me" class="main section">
-  <div class="row full">
-    <div class="page-title">About Me</div>
-    <div class="content-wrapper">
-      <div class="col-md-6 left-column">
-        <div class="left-video">my video</div>
-      </div>
-      <div class="col-md-6">
-        <p class="lead">Say</p>
-        <div class="social-icons">
-          <a href='#'><i class="fa fa-envelope"></i></a>
-          <a href='#'><i class="fa fa-facebook"></i></a>
-          <a href='#'><i class="fa fa-linkedin"></i></a>
-          <a href='#'><i class="fa fa-github"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script src="lib/fullPage.js/vendors/jquery.easings.min.js"></script>   
-<script src="lib/fullPage.js/jquery.fullPage.min.js"></script>
 <script>
   $(function() {
     // fullPage.js
-    $('#content').fullpage();
-
     setTimeout(function() {
       $('.smile').fadeIn(2500);
       $('#goto-second').slideDown('slow');  
@@ -109,15 +35,6 @@ title: Howon Song
 
     // font size
     $('.jumbo').fitText(1);
-    $('.page-title').fitText(4);
-
-    $('#goto-second').click(function() {
-      $.scrollTo('#open-source', 400);
-    });
-    $('#goto-third').click(function() {
-      $.scrollTo('#entrepreneur', 400);
-    });
-
     $('.view-projects').hover(function() {
       $(this).css('border', '4px solid black');
     }, function() {
