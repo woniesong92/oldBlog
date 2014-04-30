@@ -48,7 +48,11 @@ html, body {
   height: 100%;
   width: 16%;
   z-index: 1000;
-  background-color: grey;
+  text-align: center;
+}
+
+#sidebar > .name {
+  margin-top: 100%;
 }
 
 .page-title {
@@ -56,8 +60,24 @@ html, body {
   color: grey;
 }
 
+.project-num {
+  font-style: italic;
+  font-size: 1em;
+  color: grey;
+}
+
 .left-column {
   margin-left: 16%;
+}
+
+.right-column {
+  height: 100%;
+}
+
+.project-intro {
+  position: relative;
+  top: 20%;
+  text-align: center;
 }
 
 #togetherjs {
