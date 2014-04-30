@@ -3,7 +3,7 @@ html, body {
   min-height: 100%;
 }
 
-.full, .main, .content-wrapper {
+.full, .main {
   height: 100%;
 }
 
@@ -38,19 +38,33 @@ html, body {
 }
 
 .page-title {
-  height: 53px;
   text-align: center;
   color: grey;
 }
 
 .left-column {
-  margin-top: 1%;
-  background-color: grey;
+  height: 100%;
 }
 
 .left-video {
   height: 100%;
   background-color: white;
+}
+
+.left-video#togetherjs {
+  background-size: cover;
+  background-image: url('/img/togetherjs.jpg');
+}
+
+.left-video#edubyme {
+  background-size: cover;
+  background-image: url('/img/edubyme.png');
+}
+
+.left-video#instantmusic {
+  background-size: cover;
+  background-position: right;
+  background-image: url('/img/instantmusic.png');
 }
 
 .bigger {
@@ -62,13 +76,17 @@ html, body {
   background-image: url('/img/side-fam.jpg');
 }
 
+.content-wrapper {
+  height: calc(100% - 83px);
+}
+
 @media(min-width:1200px) {
   #introduction.main {
     height: 100%;
   }
 
   .content-wrapper {
-    height: 90%;
+    height: calc(100% - 133px);
   }
 
   .page-title {
