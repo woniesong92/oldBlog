@@ -53,10 +53,7 @@ html, body {
   width: 16%;
   z-index: 1000;
   text-align: center;
-}
-
-#sidebar > .name {
-  margin-top: 100%;
+  background-color: white;
 }
 
 .page-title {
