@@ -192,3 +192,8 @@ html, body {
   font-size: .8em;
   font-color: #95a5a6;
 }
+
+.post-links {
+  font-size: .9em;
+  font-style: bold;
+}

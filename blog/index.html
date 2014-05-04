@@ -22,7 +22,8 @@ title: Howon Song
         {% for post in site.posts %}
           <div class="blog-post">
             <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            <span class="post-date"> {{ post.date | date_to_string }}</span>
+            <span class="post-date">{{ post.date | date_to_string }}</span>
+            <div class="post-categories">{{ post.categories }}</div>
             <p class="post-content">{{ post.content }}</p>
           </div>
         {% endfor %}
