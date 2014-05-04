@@ -3,11 +3,62 @@ layout: default
 title: Howon Song
 ---
 
-<h1>Blog</h1>
-<div id="blog">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div id="sidebar"> <!-- width same as col-md-2 -->
+  <div class="my-name">
+    <a href='/'><span class='name-small'>HWS</span></a>
+  </div>
+  <div class="extra-links">
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/projects">Projects</a></li>
+    </ul>
+  </div>
 </div>
+
+<div id="blog">
+  <div class="row full">
+    <div class="content-wrapper">
+      <div class="col-md-10 left-column nopadding">
+        <h1>Blog</h1>
+        <div id="blog">
+          <ul class="posts">
+            {% for post in site.posts %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    // fullPage.js
+    // Sidebar animations
+    $('#sidebar').hover(function() {
+      $(this).animate({ width: '24%' });
+      $('.extra-links').fadeIn();
+      $('.name-small').fadeOut(200, function() {
+        $(this).text('Howon Song').css('font-size', '1.5em').fadeIn(200);
+      });
+      //$('.name-big').fadeIn();
+
+    }, function() {
+      $(this).animate({ width: '16%' });
+      $('.extra-links').fadeOut();
+      $('.name-small').fadeOut(200, function() {
+        $(this).text('HWS').css('font-size', '1.0em').fadeIn(200);
+      });
+    });
+
+    $('#sidebar .my-name').css('margin-top', $(this).height()/3);
+
+    // Responsive font size
+    $('.jumbo').fitText(1);
+    $('.page-title').fitText(4);
+
+    $('h1, h2').fitText();
+    $('.project-num').fitText(1.2);
+  });
+</script>
