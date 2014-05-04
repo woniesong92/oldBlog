@@ -89,25 +89,6 @@ title: Howon Song
       }, 500);
     }
 
-    // Sidebar animations
-    $('#sidebar').hover(function() {
-      $(this).animate({ width: '24%' });
-      $('.extra-links').fadeIn();
-      $('.name-small').fadeOut(200, function() {
-        $(this).text('Howon Song').css('font-size', '1.5em').fadeIn(200);
-      });
-      //$('.name-big').fadeIn();
-
-    }, function() {
-      $(this).animate({ width: '16%' });
-      $('.extra-links').fadeOut();
-      $('.name-small').fadeOut(200, function() {
-        $(this).text('HWS').css('font-size', '1.0em').fadeIn(200);
-      });
-    });
-
-    $('#sidebar .my-name').css('margin-top', $(this).height()/3);
-
     // Responsive font size
     $('.jumbo').fitText(1);
     $('.page-title').fitText(4);
@@ -116,3 +97,4 @@ title: Howon Song
     $('.project-num').fitText(1.2);
   });
 </script>
+<script src="/js/custom-sidebar.js"></script>
