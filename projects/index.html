@@ -5,7 +5,16 @@ title: Howon Song
 <link rel="stylesheet" href="/lib/fullPage.js/jquery.fullPage.css">
 
 <div id="sidebar"> <!-- width same as col-md-2 -->
-  <div class="name"><a id="link-to-main" href='/'>HWS</a></div>
+  <div class="my-name">
+    <a href='/'><span class='name-small'>HWS</span></a>
+  </div>
+  <div class="extra-links">
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog">Blog</a></li>
+    </ul>
+  </div>
+
 </div>
 
 <div id="open-source" class="main section">
@@ -84,15 +93,21 @@ title: Howon Song
     // Sidebar animations
     $('#sidebar').hover(function() {
       $(this).animate({ width: '24%' });
-      //$('#link-to-main').text("HOWON SONG")
+      $('.extra-links').fadeIn();
+      $('.name-small').fadeOut(200, function() {
+        $(this).text('Howon Song').css('font-size', '1.5em').fadeIn(200);
+      });
+      //$('.name-big').fadeIn();
 
     }, function() {
       $(this).animate({ width: '16%' });
-      //$('.left-column').animate({ width: '48%' })
-      //$('#link-to-main').text("HWS")
+      $('.extra-links').fadeOut();
+      $('.name-small').fadeOut(200, function() {
+        $(this).text('HWS').css('font-size', '1.0em').fadeIn(200);
+      });
     });
 
-    $('#sidebar .name').css('margin-top', $(this).height()/4);
+    $('#sidebar .my-name').css('margin-top', $(this).height()/3);
 
     // Responsive font size
     $('.jumbo').fitText(1);

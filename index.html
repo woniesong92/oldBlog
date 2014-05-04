@@ -1,4 +1,4 @@
-sub---
+---
 layout: default
 title: Howon Song
 ---
@@ -10,7 +10,8 @@ title: Howon Song
       <p id="description" class="medium"></p>
       <div class="wrapper">
         <a href="/projects">
-          <span class="view-projects">VIEW PROJECTS</span>
+          <!-- <span class="view-projects">VIEW PROJECTS</span> -->
+          <button class="btn btn-default btn-primary">What I've been doing</button>
         </a>
       </div>      
     </div>
@@ -38,9 +39,9 @@ title: Howon Song
     // font size
     $('.jumbo').fitText(1);
     $('.view-projects').hover(function() {
-      $(this).css('border', '4px solid black');
+      $(this).css('border', '2px solid black');
     }, function() {
-      $(this).css('border', '4px solid grey');
+      $(this).css('border', '2px solid grey');
     });
 
   });
