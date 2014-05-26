@@ -4,22 +4,25 @@ title: Howon Song
 ---
 <link rel="stylesheet" href="/lib/fullPage.js/jquery.fullPage.css">
 
-<div id="sidebar"> <!-- width same as col-md-2 -->
-  <div class="my-name">
-    <a href='/'><span class='name-small'>HWS</span></a>
-  </div>
-  <div class="extra-links">
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
+{% include sidebar.html %}
+
+<div id="project-introduction" class="main section">
+  <div class="row full">
+    <div class="content-wrapper">
+      <div class="col-md-12 nopadding" id="introduction">
+        <div class="project-intro-explain">
+          <p class="explain1">I build products that <strong>solve</strong> everyday <strong>problems.</strong></p>
+          <p class="explain2">Let me show you some of my work.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div id="open-source" class="main section">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-6 left-column nopadding" id="togetherjs">
+      <div class="col-md-8 nopadding" id="togetherjs">
       </div>
       <div class="col-md-4 right-column nopadding">
         <div class="project-intro">
@@ -27,23 +30,7 @@ title: Howon Song
           <h1>TOGETHERJS</h1>
           <p>Open Source by Mozilla</p>
           <p>Add real-time collaboration to your website</p>
-          <button class="btn btn-hg btn-primary">View Website</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="entrepreneur" class="main section">
-  <div class="row full">
-    <div class="content-wrapper">
-      <div class="col-md-6 left-column nopadding" id="edubyme"></div>
-      <div class="col-md-4 right-column nopadding">
-        <div class="project-intro">
-          <div class="project-num">#02</div>
-          <h1>EDUBYME</h1>
-          <p>Online Essay Revision Service (international)</p>
-          <p>Get your essays revised by bilinguils</p>
+          <button class="btn btn-hg btn-primary">Read Details</button>
           <button class="btn btn-hg btn-primary">View Website</button>
         </div>
       </div>
@@ -54,19 +41,39 @@ title: Howon Song
 <div id="side-project" class="main section">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-6 left-column nopadding" id="instantmusic"></div>
+      <div class="col-md-8 nopadding" id="instantmusic"></div>
       <div class="col-md-4 right-column nopadding">
         <div class="project-intro">   
-          <div class="project-num">#03</div>
+          <div class="project-num">#02</div>
           <h1>INSTANT MUSIC</h1>
           <p>Music player in Chrome</p>
           <p>Play the latest trendy music in a blink</p>
+          <button class="btn btn-hg btn-primary">Read Details</button>
           <button class="btn btn-hg btn-primary">View Website</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div id="entrepreneur" class="main section">
+  <div class="row full">
+    <div class="content-wrapper">
+      <div class="col-md-8 nopadding" id="edubyme"></div>
+      <div class="col-md-4 right-column nopadding">
+        <div class="project-intro">
+          <div class="project-num">#03</div>
+          <h1>EDUBYME</h1>
+          <p>Online Essay Revision Service (international)</p>
+          <p>Get your essays revised by bilinguils</p>
+          <button class="btn btn-hg btn-primary">Read Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <script src="/lib/fullPage.js/vendors/jquery.easings.min.js"></script>   
@@ -95,6 +102,9 @@ title: Howon Song
 
     $('h1, h2').fitText();
     $('.project-num').fitText(1.2);
+
+    $('.project-intro-explain p.explain1').fitText(1);
+
   });
 </script>
 <script src="/js/custom-sidebar.js"></script>

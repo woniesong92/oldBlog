@@ -3,41 +3,18 @@ layout: default
 title: Howon Song
 ---
 
-<div id="introduction" class="main section">
+<div id="main-introduction" class="main section">
   <div class="row full">
     <div id="self-marketing">
-      <p class="jumbo">HW S</p>
+      <a href="/projects"><span class="jumbo-text">HW S</span></a>
       <p id="description" class="medium"></p>
-      <div class="wrapper">
-        <a href="/projects">
-          <!-- <span class="view-projects">VIEW PROJECTS</span> -->
-          <button class="btn btn-default btn-primary">What I've been doing</button>
-        </a>
-      </div>      
-    </div>
   </div>
 </div>
 
 <script>
   $(function() {
-    // fullPage.js
-    setTimeout(function() {
-      $('.smile').fadeIn(2500);
-      $('#goto-second').slideDown('slow');  
-    }, 500);
-
-    function descriptionChanger(arr, index) {
-      if (index == 1000) return;
-      $('#description').html(arr[index % arr.length]);
-      setTimeout(function() {
-        descriptionChanger(arr, index+1);
-      }, 500);
-    }
-    var descriptionArr = ["YOUNG", "AMBITIOUS", "ENTREPRENEURIAL"];
-    descriptionChanger(descriptionArr, 0);
 
     // font size
-    $('.jumbo').fitText(1);
     $('.view-projects').hover(function() {
       $(this).css('border', '2px solid black');
     }, function() {

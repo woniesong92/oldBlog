@@ -3,17 +3,7 @@ layout: default
 title: Howon Song
 ---
 
-<div id="sidebar"> <!-- width same as col-md-2 -->
-  <div class="my-name">
-    <a href='/'><span class='name-small'>HWS</span></a>
-  </div>
-  <div class="extra-links">
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/projects">Projects</a></li>
-    </ul>
-  </div>
-</div>
+{% include sidebar.html %}
 
 <div id="blog">
   <div class="row full">
@@ -21,10 +11,20 @@ title: Howon Song
       <div class="col-md-6 left-column">
         {% for post in site.posts %}
           <div class="blog-post">
-            <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-            <span class="post-date">{{ post.date | date_to_string }}</span>
-            <div class="post-categories">{{ post.categories }}</div>
-            <p class="post-content">{{ post.content }}</p>
+            <a href="{{ post.url }}"><div class='post-title'>{{ post.title }}</div></a>
+            <div class="post-extras">About
+              <strong> 
+              {% for tag in post.categories %}
+                {% if forloop.last %}
+                  #{{ tag }}
+                {% else %}
+                  #{{ tag }},
+                {% endif %}
+              {% endfor %}
+              </strong>
+              on <em>{{ post.date | date_to_string }}</em></div>
+            <div class="post-content">{{ post.excerpt }}</div>
+          <div class="ending-post-smile"><i class="fa fa-smile-o"></i></div>
           </div>
         {% endfor %}
       </div>

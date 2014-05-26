@@ -33,6 +33,8 @@
       <script src="/js/jquery.localScroll.js"></script>
       <script src="/js/jquery.fittext.js"></script>
 
+      <a href='javascript:void()' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
+
       <div id="content" class="container-fluid full">
         {{ content }}
       </div>
@@ -54,6 +56,12 @@
           $.scrollTo('#projects', 400);
         });
 
+        $('#menu-show-button').click(function() {
+          var $sidebar = $('#sidebar');
+          //var menu_width = $('#sidebar').width();
+          $sidebar.width(0);
+          $sidebar.show().animate({width: '16%'}, 400);
+        })
       </script>
     </body>
 </html>
