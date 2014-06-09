@@ -7,19 +7,13 @@ title: Howon Song
   <div class="row full">
     <div id="self-marketing">
       <a href="/projects"><span class="jumbo-text">HW S</span></a>
-      <p id="description" class="medium"></p>
   </div>
 </div>
 
 <script>
   $(function() {
-
-    // font size
-    $('.view-projects').hover(function() {
-      $(this).css('border', '2px solid black');
-    }, function() {
-      $(this).css('border', '2px solid grey');
-    });
-
+    $('#menu-show-button').hide();
+    var height = $(document).height();
+    $('#self-marketing').css('line-height', height+'px');
   });
 </script>

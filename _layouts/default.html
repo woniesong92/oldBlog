@@ -33,7 +33,7 @@
       <script src="/js/jquery.localScroll.js"></script>
       <script src="/js/jquery.fittext.js"></script>
 
-      <a href='javascript:void()' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
+      <a href='javascript:void(0)' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
 
       <div id="content" class="container-fluid full">
         {{ content }}
@@ -44,24 +44,24 @@
       </div>
 
       <script>
-        $('#blog-link').click(function() {
-          console.log("go to blog page")
+        $(function() {
+          $('#about-link').click(function() {
+            $.scrollTo('#about', 400);
+          });
+
+          $('#projects-link').click(function() {
+            $.scrollTo('#projects', 400);
+          });
+
+          $('#menu-show-button').click(function() {
+            console.log("clicked")
+            var $sidebar = $('#sidebar');
+            //var menu_width = $('#sidebar').width();
+            $sidebar.width(0);
+            $sidebar.show().animate({width: '16%'}, 400);
+          });
         });
 
-        $('#about-link').click(function() {
-          $.scrollTo('#about', 400);
-        });
-
-        $('#projects-link').click(function() {
-          $.scrollTo('#projects', 400);
-        });
-
-        $('#menu-show-button').click(function() {
-          var $sidebar = $('#sidebar');
-          //var menu_width = $('#sidebar').width();
-          $sidebar.width(0);
-          $sidebar.show().animate({width: '16%'}, 400);
-        })
       </script>
     </body>
 </html>
