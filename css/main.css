@@ -228,6 +228,10 @@ html, body {
   font-weight: bold;
 }
 
+.post img {
+  width: 100%;
+}
+
 .ending-post-smile {
   text-align: center;
 }

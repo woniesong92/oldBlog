@@ -23,7 +23,10 @@ title: Howon Song
               {% endfor %}
               </strong>
               on <em>{{ post.date | date_to_string }}</em></div>
-            <div class="post-content">{{ post.excerpt }}</div>
+            <div class="post-content">
+              {{ post.excerpt }}
+              <span class='read-more'><a href="{{ post.url }}">Read more</a></span>
+            </div>
           <div class="ending-post-smile"><i class="fa fa-smile-o"></i></div>
           </div>
         {% endfor %}
