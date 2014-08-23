@@ -8,7 +8,8 @@ title: Howon Song
 <div id="blog">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-6 left-column">
+      <div class="col-md-8 left-column">
+        <h1>Blog</h1>
         {% for post in site.posts %}
           <div class="blog-post">
             <a href="{{ post.url }}"><div class='post-title'>{{ post.title }}</div></a>
@@ -24,8 +25,8 @@ title: Howon Song
               </strong>
               on <em>{{ post.date | date_to_string }}</em></div>
             <div class="post-content">
-              {{ post.excerpt }}
-              <span class='read-more'><a href="{{ post.url }}">Read more</a></span>
+              {{ post.excerpt }}  
+              <a href="{{ post.url }}"><div class="btn btn-blog btn-sm">Read more</div></a>
             </div>
           <div class="ending-post-smile"><i class="fa fa-smile-o"></i></div>
           </div>
@@ -35,4 +36,8 @@ title: Howon Song
   </div>
 </div>
 
-<script src="/js/custom-sidebar.js"></script>
+<script>
+  $('#sidebar').show();
+</script>
+
+  

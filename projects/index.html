@@ -18,7 +18,7 @@ title: Howon Song
     </div>
   </div>
 </div>
-
+  
 <div id="side-project" class="main section">
   <div class="row full">
     <div class="content-wrapper">
@@ -27,8 +27,9 @@ title: Howon Song
         <div class="project-intro">   
           <div class="project-num">#01</div>
           <h1>INSTANT MUSIC</h1>
-          <p>Music player in Chrome</p>
-          <p>Play the latest trendy music in a blink</p>
+          <h4 class='project-role'>Creator</h4>
+          <p>Instant Music is a chrome extension that plays latest top songs from various charts or any song of your taste from your browser.
+          It has 50,000 active users and gets ~100,000 daily requests.</p>
           <button class="btn btn-hg btn-primary">Read Details</button>
           <a href="http://instantmusicapp.com" class="btn btn-hg btn-primary">View Website</a>
         </div>
@@ -46,8 +47,9 @@ title: Howon Song
         <div class="project-intro">
           <div class="project-num">#02</div>
           <h1>TOGETHERJS</h1>
-          <p>Open Source by Mozilla</p>
-          <p>Add real-time collaboration to your website</p>
+          <h4 class='project-role'>Admin</h4>
+          <p>TogetherJS is a featured open source project run by Mozilla that
+          easily adds real-time collaboration to your website with a single line of javascript.</p>
           <button class="btn btn-hg btn-primary">Read Details</button>
           <button class="btn btn-hg btn-primary">View Website</button>
         </div>
@@ -68,23 +70,12 @@ title: Howon Song
       $('#goto-second').slideDown('slow');  
     }, 500);
 
-    function descriptionChanger(arr, index) {
-      if (index == 1000) return;
-      $('#description').html(arr[index % arr.length]);
-      setTimeout(function() {
-        descriptionChanger(arr, index+1);
-      }, 500);
-    }
-
     // Responsive font size
     $('.jumbo').fitText(1);
     $('.page-title').fitText(4);
-
     $('h1, h2').fitText();
     $('.project-num').fitText(1.2);
-
     $('.project-intro-explain p.explain1').fitText(1);
 
   });
 </script>
-<script src="/js/custom-sidebar.js"></script>

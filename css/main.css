@@ -87,6 +87,10 @@ html, body {
   color: grey;
 }
 
+.project-role {
+  color: grey;
+}
+
 .left-column {
   margin-left: 16%;
 }
@@ -210,8 +214,13 @@ html, body {
 }
 
 .blog-post {
-  margin: 10px;
+  /*margin: 10px;*/
   padding-right: 10px;
+}
+
+.btn-blog {
+  color: white;
+  background-color: #E67E22;
 }
 
 .post-extras {
@@ -249,6 +258,19 @@ li.sidebar-link {
   height: 100px;
   line-height: 100px;
   font-size: 25px;
+  color: white;
+}
+
+li.sidebar-link.about {
+  background-color: #E74C3C; 
+}
+
+li.sidebar-link.projects {
+  background-color: #F1C40F;
+}
+
+li.sidebar-link.blog {
+  background-color: #E67E22;
 }
 
 .center-column {
