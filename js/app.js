@@ -18,8 +18,16 @@ $(function() {
     sessionStorage.setItem('sidebar', false);
   }
 
+  app.isMobile = function() {
+    return $('html').width() <= 768;
+  }
+
   var isSidebar = sessionStorage.getItem('sidebar');
   if (isSidebar == "true") $('.sidebar').show();
+  else if (isSidebar == null && !app.isMobile()) {
+    $('.sidebar').show();
+    sessionStorage.setItem('sidebar', true);
+  }
   else $('.sidebar').hide();
 
   /* default.html */
