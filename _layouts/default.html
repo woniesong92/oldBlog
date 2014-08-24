@@ -42,29 +42,7 @@
         {{ content }}
       </div>
       
-
       <div id="footer">
       </div>
-
-      <script>
-        $(function() {
-          var isSidebar = sessionStorage.getItem('sidebar');
-          if (isSidebar == "true") $('#sidebar').show();
-          else $('#sidebar').hide();
-
-          $('#about-link').click(function() {
-            $.scrollTo('#about', 400);
-          });
-
-          $('#projects-link').click(function() {
-            $.scrollTo('#projects', 400);
-          });
-
-          $('#menu-show-button').click(function() {
-            app.showSidebar();
-          });
-        });
-
-      </script>
     </body>
 </html>
