@@ -7,9 +7,9 @@ title: Howon Song
 
 <div id="blog">
   <div class="row full">
-    <div class="content-wrapper">
-      <div class="col-md-8 left-column">
-        <h1>Blog</h1>
+    <div class="col-sm-8 left-column desktop">
+      <div class="blog-content">
+        <div class="blog-intro"><p class='lead'>I write about <strong>startups</strong>, <strong>development</strong>, and <strong>my life</strong>.</p></div>
         {% for post in site.posts %}
           <div class="blog-post">
             <a href="{{ post.url }}"><div class='post-title'>{{ post.title }}</div></a>
@@ -26,18 +26,40 @@ title: Howon Song
               on <em>{{ post.date | date_to_string }}</em></div>
             <div class="post-content">
               {{ post.excerpt }}  
-              <a href="{{ post.url }}"><div class="btn btn-blog btn-sm">Read more</div></a>
+              <a href="{{ post.url }}"><div class="btn btn-default btn-xs">Read more</div></a>
             </div>
-          <div class="ending-post-smile"><i class="fa fa-smile-o"></i></div>
+            <div class="post-divider"></div>
           </div>
-        {% endfor %}
+        {% endfor %}  
       </div>
     </div>
+    <!-- mobile -->
+    <div class="col-xs-12 mobile">
+      <div class="blog-content">
+        <div class="blog-intro"><p class='lead'>I write about <strong>startups</strong>, <strong>development</strong>, and <strong>my life</strong>.</p></div>
+        {% for post in site.posts %}
+          <div class="blog-post">
+            <a href="{{ post.url }}"><div class='post-title'>{{ post.title }}</div></a>
+            <div class="post-extras">About
+              <strong> 
+              {% for tag in post.categories %}
+                {% if forloop.last %}
+                  #{{ tag }}
+                {% else %}
+                  #{{ tag }},
+                {% endif %}
+              {% endfor %}
+              </strong>
+              on <em>{{ post.date | date_to_string }}</em></div>
+            <div class="post-content">
+              {{ post.excerpt }}  
+              <a href="{{ post.url }}"><div class="btn btn-default btn-xs">Read more</div></a>
+            </div>
+            <div class="post-divider"></div>
+          </div>
+        {% endfor %}  
+      </div>
+    </div>
+    <!-- //mobile -->
   </div>
 </div>
-
-<script>
-  $('#sidebar').show();
-</script>
-
-  

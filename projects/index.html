@@ -6,33 +6,37 @@ title: Howon Song
 
 {% include sidebar.html %}
 
-<div id="project-introduction" class="main section">
+<!-- <div id="project-introduction" class="main section">
   <div class="row full">
-    <div class="content-wrapper">
-      <div class="col-md-12 nopadding" id="introduction">
-        <div class="project-intro-explain">
-          <p class="explain1">I build products that <strong>solve</strong> everyday <strong>problems.</strong></p>
-          <p class="explain2">Let me show you some of my work.</p>
+    <div class="content-wrapper projects-content-wrapper">
+      <div class="col-md-8 left-column" id="introduction">
+        <div class="project-intro-container">
+          <div class="project-intro-inner">
+            <p class="lead">Here are some of my recent projects...</p>
+          </div>
+          <div class='show-scroll-down floating'><i class="fa fa-hand-o-down"></i></div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  
+</div> -->
+
+<!-- alias: work -->
+ 
 <div id="side-project" class="main section">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-8 nopadding" id="instantmusic"></div>
-      <div class="col-md-4 right-column nopadding">
+      <div class="col-sm-8 col-xs-12 desktop" id="instantmusic"></div>
+      <div class="col-sm-4 col-xs-12 right-column">
         <div class="project-intro">   
           <div class="project-num">#01</div>
-          <h1>INSTANT MUSIC</h1>
+          <h2>INSTANT MUSIC</h2>
           <h4 class='project-role'>Creator</h4>
-          <p>Instant Music is a chrome extension that plays latest top songs from various charts or any song of your taste from your browser.
+          <p class='project-explain'>Instant Music is a chrome extension that plays latest top songs from various charts or any song of your taste from your browser.
           It has 50,000 active users and gets ~100,000 daily requests.</p>
-          <button class="btn btn-hg btn-primary">Read Details</button>
           <a href="http://instantmusicapp.com" class="btn btn-hg btn-primary">View Website</a>
         </div>
+        <div class='show-scroll-icon floating'><i class="fa fa-hand-o-down"></i></div>
       </div>
     </div>
   </div>
@@ -41,16 +45,15 @@ title: Howon Song
 <div id="open-source" class="main section">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-8 nopadding" id="togetherjs">
+      <div class="col-sm-8 col-xs-12 desktop" id="togetherjs">
       </div>
-      <div class="col-md-4 right-column nopadding">
+      <div class="col-sm-4 col-xs-12 right-column">
         <div class="project-intro">
           <div class="project-num">#02</div>
-          <h1>TOGETHERJS</h1>
+          <h2>TOGETHERJS</h2>
           <h4 class='project-role'>Admin</h4>
-          <p>TogetherJS is a featured open source project run by Mozilla that
+          <p class='project-explain'>TogetherJS is a featured open source project run by Mozilla that
           easily adds real-time collaboration to your website with a single line of javascript.</p>
-          <button class="btn btn-hg btn-primary">Read Details</button>
           <button class="btn btn-hg btn-primary">View Website</button>
         </div>
       </div>
@@ -65,17 +68,12 @@ title: Howon Song
     // fullPage.js
     $('#content').fullpage();
 
-    setTimeout(function() {
-      $('.smile').fadeIn(2500);
-      $('#goto-second').slideDown('slow');  
-    }, 500);
-
-    // Responsive font size
-    $('.jumbo').fitText(1);
-    $('.page-title').fitText(4);
-    $('h1, h2').fitText();
-    $('.project-num').fitText(1.2);
-    $('.project-intro-explain p.explain1').fitText(1);
+    // // Responsive font size
+    // $('.jumbo').fitText(1);
+    // $('.page-title').fitText(4);
+    // $('h1, h2').fitText();
+    // $('.project-num').fitText(1.2);
+    // $('.project-intro-explain p.explain1').fitText(1);
 
   });
 </script>

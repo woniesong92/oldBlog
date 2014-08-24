@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="/css/main.css">
 
         <!-- Loading Bootstrap -->
-        <link href="/lib/flatui/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- <link href="/lib/flatui/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">          
 
         <!-- Loading Flat UI -->
         <link href="/lib/flatui/css/flat-ui.css" rel="stylesheet">
@@ -37,7 +38,7 @@
 
       <a href='javascript:void(0)' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
 
-      <div id="content" class="container-fluid full">
+      <div id="content" class="full">
         {{ content }}
       </div>
       
@@ -58,7 +59,7 @@
           $('#menu-show-button').click(function() {
             var $sidebar = $('#sidebar');
             $sidebar.width(0);
-            $sidebar.show().animate({width: '16%'}, 400);
+            $sidebar.show().animate({width: '250px'}, 400);
           });
         });
 

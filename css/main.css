@@ -19,6 +19,7 @@ html, body {
   width: 20px;
   height: 20px;
   z-index: 1000;
+  font-size: 20px;
 }
 
 #menu-hide-button {
@@ -47,10 +48,33 @@ html, body {
   margin-left: 10px;
 }
 
-#self-marketing {
+.projects-content-wrapper {
+  background-c
+}
+
+.homepage {
+  height: 100%;
+  background-color: #3498DB;
+}
+
+.self-marketing {
+  display: table;
+  font-family: 'Open Sans Condensed', sans-serif;
   width: 100%;
   height: 100%;
   text-align: center;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0px;
+  color: white;
+}
+
+.self-marketing .jumbo-text {
+  color: white;
+}
+
+.smile-icon {
+  display: none;
 }
 
 .angle-down-wrapper {
@@ -64,11 +88,12 @@ html, body {
 }
 
 #sidebar {
-  display: none;
+  /*display: none;*/
   position: fixed;
   left: 0;
   height: 100%;
-  width: 16%;
+  /*width: 16%;*/
+  width: 250px;
   z-index: 1000;
   text-align: center;
   background-color: white;
@@ -83,7 +108,7 @@ html, body {
 
 .project-num {
   font-style: italic;
-  font-size: 1em;
+  font-size: 24px;
   color: grey;
 }
 
@@ -92,7 +117,7 @@ html, body {
 }
 
 .left-column {
-  margin-left: 16%;
+  margin-left: 270px;
 }
 
 .right-column {
@@ -142,11 +167,26 @@ html, body {
   height: 100%;
 }
 
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .jumbo-text {
+  font-weight: bold;
   font-size: 100px;
 }
 
+.small-jumbo-text {
+  margin-top: -30px;
+  font-size: 25px;
+}
+
 .col-md-6, .col-md-8, .col-md-12 {
+  height: 100%;
+}
+
+.col-sm-6, .col-sm-8, .col-sm-12 {
   height: 100%;
 }
 
@@ -158,23 +198,23 @@ html, body {
   background: blue;
 }
 
-.nopadding {
-  padding: 0 !important;
-}
-
 .nospace {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.project-intro-explain {
-  width: 80%;
+.project-intro-container {
+  font-size: 80px;
   height: 100%;
-  margin: 0 auto;
 }
 
-.project-intro-explain p.explain1 {
-  font-size: 100px;
+.project-intro-inner {
+  margin-top: 20px;
+}
+
+.project-explain {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media(min-width:1200px) {
@@ -214,8 +254,16 @@ html, body {
 }
 
 .blog-post {
-  /*margin: 10px;*/
-  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-post-content.mobile {
+  padding-left: 20px;
+}
+
+.post-divider {
+  padding-top: 10px;
+  border-bottom: 1px dashed #BDC3C7;
 }
 
 .btn-blog {
@@ -233,7 +281,7 @@ html, body {
 }
 
 .post-title {
-  font-size: 2em;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -291,7 +339,99 @@ a.btn {
   color: white !important;
 }
 
+#about {
+  height: 100%;
+}
+
+.about-content{
+  margin-top: 20px;
+}
+
+.mobile .about-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mobile .blog-content {
+  padding-left: 20px;
+}
+
+.blog-content {
+  margin-top: 20px;
+}
+
+.about-contact-links {
+  margin-top: 20px;
+}
+
 .about-contact-link {
   font-size: 1.5em;
   padding-right: 20px;
+}
+
+.show-scroll-icon {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+/* float */
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(8%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(8%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  /* Hide desktop elements for mobile devices */
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: inherit !important;
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* Hide mobile elements for mobile devices */
+  .desktop {
+    display: inherit !important;
+  }
+  .mobile {
+    display: none !important;
+  }
 }

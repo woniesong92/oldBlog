@@ -4,17 +4,35 @@ layout: default
 
 {% include sidebar.html %}
 
-<div id="blog-post">
+<div class="blog-post-content desktop">
   <div class="row full">
     <div class="content-wrapper">
-      <div class="col-md-6 left-column">
+      <div class="col-sm-8 left-column">
         <h2>{{ page.title }}</h2>
         <span class="post-date">{{ page.date | date_to_string }}</span>
         <div class="post">
           {{ content }}
         </div>
         <div class="post-links">
-          <a href="javascript:history.back()">Back</a>
+          <a href="javascript:history.back()"><div class="btn btn-default btn-xs">Back</div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile -->
+<div class="blog-post-content mobile">
+  <div class="row full">
+    <div class="content-wrapper">
+      <div class="col-xs-12">
+        <h2>{{ page.title }}</h2>
+        <span class="post-date">{{ page.date | date_to_string }}</span>
+        <div class="post">
+          {{ content }}
+        </div>
+        <div class="post-links">
+          <a href="javascript:history.back()"><div class="btn btn-default btn-xs">Back</div></a>
         </div>
       </div>
     </div>
