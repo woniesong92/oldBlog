@@ -129,9 +129,18 @@ html, body {
 }
 
 .project-intro {
-  position: relative;
-  top: 20%;
+  display: table;
+  height: 100%;
   text-align: center;
+}
+
+.project-intro-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.view-website-btn {
+  margin-top: 10px;
 }
 
 #introduction {
@@ -434,7 +443,6 @@ a.btn {
   .mobile {
     display: inherit !important;
   }
-
   .sidebar {
     width: 150px;
   }
