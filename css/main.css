@@ -436,6 +436,7 @@ a.btn {
 
 /* responsive */
 @media (max-width: 768px) {
+  /* FOR MOBILE */
   /* Hide desktop elements for mobile devices */
   .desktop {
     display: none !important;
@@ -448,6 +449,7 @@ a.btn {
   }
 }
 @media only screen and (min-width: 769px) {
+  /* FOR DESKTOP */
   /* Hide mobile elements for mobile devices */
   .desktop {
     display: inherit !important;
