@@ -31,10 +31,10 @@
       <script src="/lib/flatui/js/jquery-1.8.3.min.js"></script>
       <script src="/lib/flatui/js/jquery-ui-1.10.3.custom.min.js"></script>
       <script src="/lib/flatui/js/jquery.ui.touch-punch.min.js"></script>
-      <script src="/lib/flatui/js/bootstrap.min.js"></script>
       <script src="/js/jquery.scrollTo.js"></script>
       <script src="/js/jquery.localScroll.js"></script>
       <script src="/js/jquery.fittext.js"></script>
+      <script src="/js/app.js"></script>
 
       <a href='javascript:void(0)' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
 
@@ -48,6 +48,10 @@
 
       <script>
         $(function() {
+          var isSidebar = sessionStorage.getItem('sidebar');
+          if (isSidebar == "true") $('#sidebar').show();
+          else $('#sidebar').hide();
+
           $('#about-link').click(function() {
             $.scrollTo('#about', 400);
           });
@@ -57,9 +61,7 @@
           });
 
           $('#menu-show-button').click(function() {
-            var $sidebar = $('#sidebar');
-            $sidebar.width(0);
-            $sidebar.show().animate({width: '250px'}, 400);
+            app.showSidebar();
           });
         });
 

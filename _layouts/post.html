@@ -40,5 +40,7 @@ layout: default
 </div>
 
 <script>
-  $('#sidebar').show();
+  var isSidebar = sessionStorage.getItem('sidebar');
+  if (isSidebar == "true") $('#sidebar').show();
+  else $('#sidebar').hide();
 </script>

@@ -88,7 +88,7 @@ html, body {
 }
 
 #sidebar {
-  /*display: none;*/
+  display: none;
   position: fixed;
   left: 0;
   height: 100%;
@@ -99,6 +99,10 @@ html, body {
   background-color: white;
   font-size: 20px;
   box-shadow: 1px 2px 6px 0 rgba(0,0,0,.25);
+}
+
+#sidebar.mobile {
+  width: 150px;
 }
 
 .page-title {
@@ -216,6 +220,8 @@ html, body {
   padding-left: 5px;
   padding-right: 5px;
 }
+
+
 
 @media(min-width:1200px) {
   #introduction.main {
@@ -364,6 +370,10 @@ a.btn {
   margin-top: 20px;
 }
 
+.about-contact-links.mobile {
+  font-size: 12px;
+}
+
 .about-contact-link {
   font-size: 1.5em;
   padding-right: 20px;
@@ -423,7 +433,6 @@ a.btn {
   }
   .mobile {
     display: inherit !important;
-    font-size: 1.2em;
   }
 }
 @media only screen and (min-width: 769px) {
