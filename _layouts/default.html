@@ -36,7 +36,13 @@
       <script src="/js/jquery.fittext.js"></script>
       <script src="/js/app.js"></script>
 
-      <a href='javascript:void(0)' id="menu-show-button"><i class="fa fa-chevron-right"></i></a>
+      <!-- <a href='javascript:void(0)' id="menu-show-button"><i class="fa fa-chevron-right"></i></a> -->
+
+      <a href='javascript:void(0)' id="menu-show-button">
+        <div class='menu-open-div'>
+          <i class="fa fa-toggle-off"></i>
+        </div>
+      </a>
 
       <div id="content" class="full">
         {{ content }}
