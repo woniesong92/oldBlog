@@ -455,12 +455,12 @@ a.btn {
     display: inherit !important;
   }
   .sidebar {
-    width: 150px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 769px) {
   /* FOR DESKTOP */
-  /* Hide mobile elements for mobile devices */
+  /* Hide mobile elements for desktop */
   .desktop {
     display: inherit !important;
   }
